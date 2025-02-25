@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="element">
+        <span class="elementText" id="elementTextId">Text Inside Element</span>
+      </div>
+      <button class="changeBorderColor">3: Змінити колір рамки на жовтий</button>
+    </main>
+  </body>
+  <script>
+    const element = document.querySelector(".element");
+    const changeBorderColorr = document.querySelector(".changeBorderColor");
+
+    changeBorderColorr.addEventListener("click", () => {
+      element.style.borderColor = "yellow";
+    });
+  </script>
+</html>
